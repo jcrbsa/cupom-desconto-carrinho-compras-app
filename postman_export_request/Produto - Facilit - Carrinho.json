@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "c9e4a698-2328-43e8-9077-35a8f23480db",
+		"name": "Produto - Facilit - Carrinho Compra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cupom Desconto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"id\": \"1\",\n\t\t\"nome\": \"produtoA\",\n\t\t\"preco\": \"99.99\",\n\t\t\"tipo\": \"A\"\n\t},\n\t\n\t{\n\t\t\"id\": \"2\",\n\t\t\"nome\": \"produtoB\",\n\t\t\"preco\": \"66.99\",\n\t\t\"tipo\": \"B\"\n\t},\n\t\n\t{\n\t\t\"id\": \"3\",\n\t\t\"nome\": \"produtC\",\n\t\t\"preco\": \"33.99\",\n\t\t\"tipo\": \"C\"\n\t},\n\t\n\t\n\t{\n\t\t\"id\": \"4\",\n\t\t\"nome\": \"produtD\",\n\t\t\"preco\": \"11.99\",\n\t\t\"tipo\": \"A\"\n\t},\n\t\n\t{\n\t\t\"id\": \"5\",\n\t\t\"nome\": \"produtE\",\n\t\t\"preco\": \"3.99\",\n\t\t\"tipo\": \"B\"\n\t},\n\t\n\t{\n\t\t\"id\": \"6\",\n\t\t\"nome\": \"produtF\",\n\t\t\"preco\": \"0.99\",\n\t\t\"tipo\": \"C\"\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cupom_desconto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cupom_desconto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "01 Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"nome\": \"produtoA\",\n\t\t\"preco\": \"99.99\",\n\t\t\"tipo\": \"A\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02 Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"nome\": \"produtoB\",\n\t\t\"preco\": \"66.99\",\n\t\t\"tipo\": \"B\"\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t\n\t{\n\n\t\t\"nome\": \"produtC\",\n\t\t\"preco\": \"33.99\",\n\t\t\"tipo\": \"C\"\n\t}\n\t\n\t\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{\n\n\t\t\"nome\": \"produtD\",\n\t\t\"preco\": \"11.99\",\n\t\t\"tipo\": \"A\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05 Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{\n\t\t\"nome\": \"produtE\",\n\t\t\"preco\": \"3.99\",\n\t\t\"tipo\": \"B\"\n\t}\n\t\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06 Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{\n\n\t\t\"nome\": \"produtF\",\n\t\t\"preco\": \"0.99\",\n\t\t\"tipo\": \"C\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "07 Cadastrar Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{\n\n\t\t\"nome\": \"produtF\",\n\t\t\"preco\": \"0.99\",\n\t\t\"tipo\": \"C\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produto/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Produto",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

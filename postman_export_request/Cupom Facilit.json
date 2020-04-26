@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "1ccc13c5-fe7e-4508-be5b-a388a2c4b17f",
+		"name": "Cupom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MilValorCincoDesc cupom Progressivo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"nome\": \"#MilValorCincoDesc\",\n\t\t\"valorcompras\": \"1000\",\n\t\t\"desconto\": \"5\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cupom_progressivo/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cupom_progressivo",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cupom Progressivos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cupom_progressivos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cupom_progressivos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cupom Nao Progressivos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cupom_nao_progressivos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cupom_nao_progressivos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CincoMilValorCincoDesc cupom Progressivo Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"nome\": \"#CincoMilValorSetDesc\",\n\t\t\"valorcompras\": \"5000\",\n\t\t\"desconto\": \"7\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cupom_progressivo/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cupom_progressivo",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DezMilValorDezDesc cupom Progressivo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"nome\": \"#DezMilValorDezDesc\",\n\t\t\"valorcompras\": \"10000\",\n\t\t\"desconto\": \"10\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cupom_progressivo/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cupom_progressivo",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DezQuantDezDesc - Cupom Nao Progressivo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n\t\t\"nome\": \"#DezQuantDezDesc2\",\n\t\t\"quantidadeprodutos\": \"10\",\n\t\t\"desconto\": \"10\"\n\t}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cupom_nao_progressivo/adicionar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cupom_nao_progressivo",
+						"adicionar"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "07d38eb9-7103-4ebb-b583-48b9785166fc",
+		"name": "Desconto Cupom Produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "desconto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \n        \"produto\": [\n            {\n                \"id\": \"1\",\n                \"nome\": \"produtoA\",\n                \"preco\": \"99.99\",\n                \"tipo\": \"A\"\n            },\n            {\n                \"id\": \"2\",\n                \"nome\": \"produtoB\",\n                \"preco\": \"66.99\",\n                \"tipo\": \"B\"\n            },\n            {\n                \"id\": \"3\",\n                \"nome\": \"produtC\",\n                \"preco\": \"33.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"4\",\n                \"nome\": \"produtD\",\n                \"preco\": \"11.99\",\n                \"tipo\": \"A\"\n            },\n            {\n                \"id\": \"5\",\n                \"nome\": \"produtE\",\n                \"preco\": \"3.99\",\n                \"tipo\": \"B\"\n            },\n            {\n                \"id\": \"6\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            }\n        ],\n        \"cupom\": [\n            {\n                \"nome\": \"#MilValorCincoDesc\"\n            },\n            {\n                \"nome\": \"#CincoMilValorSetDesc\"\n            },\n            {\n                \"nome\": \"#DezMilValorDezDesc\"\n            },\n            {\n                \"nome\": \"#DezQuantDezDesc2\"\n            }\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/desconto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"desconto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quantidade Tipo Nao Progressivo Desconto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \n        \"produto\": [\n            {\n                \"id\": \"1\",\n                \"nome\": \"produtoA\",\n                \"preco\": \"99.99\",\n                \"tipo\": \"A\"\n            },\n            {\n                \"id\": \"2\",\n                \"nome\": \"produtoB\",\n                \"preco\": \"66.99\",\n                \"tipo\": \"B\"\n            },\n            {\n                \"id\": \"3\",\n                \"nome\": \"produtC\",\n                \"preco\": \"33.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"4\",\n                \"nome\": \"produtD\",\n                \"preco\": \"11.99\",\n                \"tipo\": \"A\"\n            },\n            {\n                \"id\": \"5\",\n                \"nome\": \"produtE\",\n                \"preco\": \"3.99\",\n                \"tipo\": \"B\"\n            },\n            {\n                \"id\": \"6\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"7\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"9\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"10\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"11\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"12\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"13\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"14\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            },\n            {\n                \"id\": \"15\",\n                \"nome\": \"produtF\",\n                \"preco\": \"0.99\",\n                \"tipo\": \"C\"\n            }\n            \n        ],\n        \"cupom\": [\n            {\n                \"nome\": \"#MilValorCincoDesc\"\n            },\n            {\n                \"nome\": \"#CincoMilValorSetDesc\"\n            },\n            {\n                \"nome\": \"#DezMilValorDezDesc\"\n            },\n            {\n                \"nome\": \"#DezQuantDezDesc2\"\n            }\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/desconto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"desconto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todos Carrinhos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carrinhos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carrinhos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
