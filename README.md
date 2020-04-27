@@ -86,7 +86,6 @@ Dependências
 
 -   maven 3.6
 
--   nimbus-jose-jwt
 
 -   spring-boot-starter-test
 
@@ -226,7 +225,7 @@ Dependências
                 "nome": "#DezMilValorDezDesc"
             },
             {
-                "nome": "#DezQuantDezDesc2"
+                "nome": "#DezQuantDezDesc"
             }
         ]
 }
@@ -364,9 +363,9 @@ Dependências
 * **JSON Request:**
 	* ```javascript
 	  {
-	    "nome": "#MilValorCincoDesc",
-		"valorcompras": "1000",
-		"desconto": "5"
+	    "nome": "#DezQuantDezDesc",
+		"quantidade": "10",
+		"desconto": "10"
 	  }
 	  ```
 * **Success Response:**
@@ -385,9 +384,9 @@ Dependências
 * **JSON Request:**
 	* ```javascript
 	  {
-		"nome": "#MilValorCincoDesc",
-		"valorcompras": "1000",
-		"desconto": "5"
+		"nome": "#VinteQuantVinteDesc",
+		"quantidade": "20",
+		"desconto": "20"
 	  }
 	  ```
 * **Success Response:**
